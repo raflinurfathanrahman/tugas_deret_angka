@@ -2,9 +2,11 @@ function deretAngka(n) {
     // tulis code jawabanmu di sini
     var hasil = '';
     for (var i = 1; i <= n; i++) {
-      if (i % 3 === 0) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        hasil += 'NIOMIC '
+      } else if (i % 3 === 0) {
         hasil += 'NIO '
-      } else if (i % 5 === 5) {
+      } else if(i % 5 === 0){
         hasil += 'MIC '
       } else {
         hasil += i + ' '
